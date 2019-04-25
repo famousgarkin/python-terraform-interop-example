@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  example:
+    build: .
+    volumes:
+      - .:/example
+    working_dir: /example
+    command: python3 ./example.py
